@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*
 import requests
 import json
 import time
@@ -49,8 +50,6 @@ def xiadan(i):
 
 for i in range(100, 20000):
     print(i)
-
-
 
     ww=send(str(327584+i));
 
