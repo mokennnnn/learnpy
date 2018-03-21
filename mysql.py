@@ -26,7 +26,7 @@ def insert():
     print('运行结果 %s'%(result))
 
 
-for i in range(1, 1000):
+for i in range(1, 100000000000):
     insert();
 
 con.close();
