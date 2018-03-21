@@ -19,7 +19,7 @@ def insert():
     m.update(str(m1).encode("utf-8"));
     m2 = m.hexdigest()
     print(max);
-    sql = "insert `ip` (`ip`,`count`,`server`,`cookies`) values ('%s','%s','%s','%s')" % ( m1, m1, m2, m2);
+    sql = "insert `ip` (`ip`,`count`,`server`,`cookies`) values ('%s','%s','%s','%s')" % ( result['max']+1, m1, m2, m2);
     print(sql)
     cursor.execute(sql);
     result = cursor.fetchone();
